@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right top, #0057914f, #e0e6f8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #e8f1f5;
+        border-radius: 20px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.61);
+        padding: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"] {
+        border: 0;
+        background-color: transparent;
+        font-size: 1.1rem;
+        padding: 10px 5px;
+      }
+      .box-input {
+        display: flex;
+        border: 0.1px rgba(0, 0, 0, 0.144) solid;
+        width: max-content;
+        border-radius: 10px;
+        height: max-content;
+        margin: 10px 0;
+        align-items: center;
+        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.315);
+      }
+      .username {
+        margin-top: 40px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        border: 0;
+        background-color: transparent;
+        font-size: 1.2rem;
+        color: white;
+        cursor: pointer;
+        padding: 7px 20px;
+      }
+      .box-button {
+        border: 1px solid #6b709b;
+        border-radius: 12px;
+        background-color: #2c0aee9c;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
+      }
+      .box-button:hover {
+        background-color: #4354ee;
+        box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.363);
+      }
+      form {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="">
+        <img src="title.png" alt="" />
+        <div class="box-input username">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            size="23"
+          />
+        </div>
+        <div class="box-input">
+          <input type="text" name="nik" id="nik" placeholder="Nik" size="23" />
+        </div>
+        <div class="box-input">
+          <input
+            type="text"
+            name="nKTP"
+            id="nKTP"
+            placeholder="Nomor KTP"
+            size="23"
+          />
+        </div>
+        <div class="box-input">
+          <input
+            type="text"
+            name="nBPJS"
+            id="nBPJS"
+            placeholder="Nomor BPJS"
+            size="23"
+          />
+        </div>
+
+        <div class="button-container">
+          <div class="box-button">
+            <input type="submit" value="Daftar" />
+          </div>
+          <br />
+          <div class="box-button">
+            <input type="reset" value="Reset" />
+          </div>
+        </div>
+        <a href="login.html">Masuk</a>
+      </form>
+    </div>
+
+    <script>
+      let visibility = false;
+
+      function visibility_handle() {
+        if (visibility == false) {
+          document.getElementById("nik").type = "text";
+          document.getElementById("visibility").innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg>';
+          visibility = true;
+        } else {
+          document.getElementById("visibility").innerHTML =
+            '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/></svg>';
+          document.getElementById("nik").type = "password";
+          visibility = false;
+        }
+      }
+    </script>
+  </body>
+</html>
