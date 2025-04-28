@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jadwal Dokter - RSU Adam Malik Medan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="cari.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images.png" alt="Logo RSU Adam Malik">
+        <h1>Jadwal Dokter RSU Adam Malik Medan</h1>
+    </header>
+
+    <section class="search-section">
+        <label for="search">Menu Dokter:</label>
+        <input type="text" id="search" placeholder="Masukkan nama dokter..." onkeyup="cariDokter()">
+    </section>
+
+    <section class="jadwal-section">
+        <h2>Jadwal Dokter</h2>
+        <table id="jadwalTable">
+            <thead>
+                <tr>
+                    <th>Nama Dokter</th>
+                    <th>Spesialis</th>
+                    <th>Hari</th>
+                    <th>Jam Praktik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dr. Rita Evalina,Sp.A </td>
+                    <td>Anak Alergi Imunologi</td>
+                    <td>Senin - Kamis</t>
+                    <td>08:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>dr. Anri Iskandar Mardia,Sp.PD</td>
+                    <td>Hematologi - Onkologi Medik</td>
+                    <td>Selasa - Kamis</td>
+                    <td>09:00 - 13:00</td>
+                </tr>
+                <tr>
+                    <td>dr. Arya Tjipta Prananda,Sp.BD</td>
+                    <td>Bedah Plastik</td>
+                    <td>Rabu - Jumat</td>
+                    <td>10:00 - 14:00</td>
+                </tr>
+                <tr>
+                    <td>dr. Putri Amelia Sp.A</td>
+                    <td>Kardiologi</td>
+                    <td>Sabtu - Minggu</td>
+                    <td>08:00 - 12:30</td>
+                </tr>
+                <tr>
+                    <td>dr. Rosmayati Siyafriani Sriregar,Sp.N</td>
+                    <td>Nefrologi</td>
+                    <td>Jum'at - Sabtu</td>
+                    <td>08:00 - 10:05</td>
+                </tr>
+                <tr>
+                    <td>dr. Wisman</td>
+                    <td>Respirologi Anak</td>
+                    <td>Senin - Rabu</td>
+                    <td>09:00 - 14:15</td>
+                </tr>
+                <tr>
+                    <td>dr. Welly Efendy Seba,DRG </td>
+                    <td>Bedah Mulut</td>
+                    <td>Selasa - Kamis</td>
+                    <td>08:00 - 15:20</td>
+                </tr>
+                <tr>
+                    <td>dr. Budi Irwan</td>
+                    <td>Bedah Digestif</td>
+                    <td>Kamis - Sabtu</td>
+                    <td>10:00 - 11:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Abdurrahman Mouza</td>
+                    <td>Bedah Saraf</td>
+                    <td>Rabu - Jum'at</td>
+                    <td>08:00 - 12:45</td>
+                </tr>
+                <tr>
+                    <td>dr.Sriwahyni Pernama</td>
+                    <td>Bedah Kulit</td>
+                    <td>Kamis - Jum'at</td>
+                    <td>09:00 - 16:30</td>
+                </tr>
+                <tr>
+                    <td>dr.Rizalina A. Asnir,Sp.THT-KL (K) FICS</td>
+                    <td>Bedah Kepala Leher</td>
+                    <td>Senin - Rabu</td>
+                    <td>13:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Alfi Syahri Rangkuti (SDCTK)</td>
+                    <td>Jiwa</td>
+                    <td>Selasa - Rabu</td>
+                    <td>13:00 - 17:10</td>
+                </tr>
+                <tr>
+                    <td>dr.Wika Hanid,Sp.PD</td>
+                    <td>Psikosomatik</td>
+                    <td>Kamis - Jum'at</td>
+                    <td>14:00 - 16:50</td>
+                </tr>
+                <tr>
+                    <td>dr.Fadli Armi Lubis,Sp.AN</td>
+                    <td>Anastesi</td>
+                    <td>Selasa - Kamis</td>
+                    <td>13:00 - 16:20</td>
+                </tr>
+                <tr>
+                    <td>dr.Melda Deliana</td>
+                    <td>Endokrinologi</td>
+                    <td>Rabu - Kamis</td>
+                    <td>10:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Elly Tianggur E Silalahi,Sp.M</td>
+                    <td>Mata</td>
+                    <td>Selasa - Rabu</td>
+                    <td>08:00 - 10:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Alwi Thamrin Nasution,Sp.PD.KGH</td>
+                    <td>Ginjal-Hipertensi</td>
+                    <td>Kamis - Sabtu</td>
+                    <td>14:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Erjan Fikri,Sp.BA</td>
+                    <td>Senin - Rabu</td>
+                    <td>Bedah Anak</td>
+                    <td>12:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Muntasir AB,Sp.P</td>
+                    <td>Paru-Paru</td>
+                    <td>Selasa - Jum'at</td>
+                    <td>13:00 - 17:10</td>
+                </tr>
+                <tr>
+                    <td>dr.Kristina Nadeak,Sp.KK</td>
+                    <td>Infeksi Menular Seksual</td>
+                    <td>Senin -  Kamis</td>
+                    <td>09:00 - 11:00</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
