@@ -1,0 +1,240 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - RS Adam Malik</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(to right top, #0057914f, #e0e6f8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+      }
+      .title{
+        color: rgb(59, 59, 59);
+      }
+
+      a {
+        text-decoration: none;
+        color: #2a4be1;
+        margin-top: 10px;
+        display: inline-block;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #1222b8;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        background-color: #f9fbff;
+        width: 100%;
+        max-width: 900px;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+
+      .image-container,
+      .login-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
+
+      .gambar {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .login-container form {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .box-input {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px 12px;
+        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .box-input input {
+        border: none;
+        background: none;
+        flex: 1;
+        font-size: 1rem;
+        outline: none;
+      }
+
+      .visibility {
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .box-button {
+        flex: 1;
+        border-radius: 10px;
+        background-color: #0a69ee9c;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .box-button:hover {
+        background-color: #4354ee;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        border: none;
+        background: none;
+        color: #fff;
+        font-size: 1.1rem;
+        padding: 10px;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      form img {
+        height: 100px;
+        margin: 0 auto 10px;
+        display: block;
+      }
+
+      .links {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+        text-align: center;
+        align-items: center;
+      }
+      .links a{
+        font-size: small;
+      }
+   
+
+      @media only screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .image-container {
+          display: none;
+        }
+
+        .login-container {
+          width: 100%;
+          padding: 40px 20px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img class="gambar" src="/assets/icon.png" alt="" />
+      </div>
+      <div class="login-container">
+        <form action="" method="">
+          <img src="/assets/logo.png" alt="" />
+          <h1 class="title poppins-bold">Login</h1>
+          <div class="box-input username">
+            <input
+              type="text"
+              name="nik"
+              id="nik"
+              placeholder="Nik"
+              class="quicksand"
+              size="23"
+            />
+          </div>
+          <div class="box-input">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+              class="quicksand"
+              size="20"
+            />
+          </div>
+          <div class="button-container">
+            <div class="box-button">
+              <input type="submit" value="Login" class="poppins-bold"/>
+            </div>
+            <br />
+            <div class="box-button">
+              <input type="reset" value="Reset" class="poppins-bold"/>
+            </div>
+          </div>
+          <div class="links">
+            <a href="/" class="quicksand">Beranda</a>
+            <a href="signup.html" class="quicksand"> | Belum punya akun? Daftar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); 
+    
+        const nik = document.getElementById("nik").value.trim();
+        const password = document.getElementById("password").value.trim();
+    
+        const dummyUser = {
+          nik: "0811111",
+          password: "admin123"
+        };
+    
+        if (nik === dummyUser.nik && password === dummyUser.password) {
+          localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("nik", nik);
+    
+          alert("Login berhasil!");
+          window.location.href = "../index.html"; 
+        } else {
+          alert("Username atau password salah!");
+        }
+      });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak - RS Adam Malik</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <nav class="nav-con">
+    <div>
+      <img src="../assets/logo.png" alt="Logo RS Adam Malik" />
+    </div>
+    <ul>
+      <li><a href="/index.html" class="quicksand" >Beranda</a></li>
+      <li><a href="/jadwal/index.html" class="quicksand">Jadwal Dokter</a></li>
+      <li><a href="/contact/index.html" class="quicksand" style="font-weight: 700">Kontak</a></li>
+    </ul>
+    <div id="auth-buttons">
+      <a href="/auth/login.html"
+        ><button class="btn-outline poppins-bold">Login</button></a
+      >
+      <a href="/auth/signup.html"
+        ><button class="btn-primary poppins-bold">Register</button></a
+      >
+    </div>
+    <div id="logout-button" style="display: none">
+      <button class="btn-outline poppins-bold" onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+  <section class="contact-wrapper">
+    <div class="contact-header">
+      <div class="contact-info">
+        <h2>Hubungi Kami</h2>
+        <p>Kami siap membantu Anda. Silakan hubungi kami melalui informasi di bawah ini.</p>
+        <img class="contact-decor" src="https://storage.googleapis.com/a1aa/image/6682ba0c-7fae-4b3c-3175-b13763d39866.jpg" alt="Dekorasi" />
+      </div>
+      <div class="contact-image">
+        <img src="https://storage.googleapis.com/a1aa/image/5b8a4612-2807-48b1-183d-e8a020da73fd.jpg" alt="Petugas CS" />
+      </div>
+    </div>
+  
+    <div class="contact-cards">
+      <div class="card">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Hubungi Bagian Informasi</h3>
+        <p>Silakan hubungi kami melalui saluran resmi di bawah ini:</p>
+        <ul style="text-align: left; padding-left: 0; list-style: none; line-height: 1.8;">
+          <li><strong>Telepon Umum:</strong> <a href="tel:+62614551234">+62 614 551234</a></li>
+          <li><strong>dr. Aisyah, Sp.PD:</strong> <a href="tel:+6281234567890">+62 812-3456-7890</a></li>
+          <li><strong>dr. Budi, Sp.JP:</strong> <a href="tel:+6282234567890">+62 822-3456-7890</a></li>
+          <li><strong>dr. Clara, Sp.THT:</strong> <a href="tel:+6283234567890">+62 832-3456-7890</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@rsadammalik.co.id">info@rsadammalik.co.id</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/rsadammalik" target="_blank">@rsadammalik</a></li>
+        </ul>
+      </div>
+  
+      <div class="card">
+        <i class="fas fa-comments"></i>
+        <h3>Kontak Dukungan Pasien</h3>
+        <p>Kami hadir untuk membantu Anda dengan layanan terbaik. Silakan hubungi tim dukungan kami melalui WhatsApp.</p>
+        <a href="https://wa.me/6281234567890" target="_blank">
+          <button>Hubungi via WhatsApp</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="../index.js"></script>
+</body>
+</html>

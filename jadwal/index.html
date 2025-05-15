@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jadwal Dokter - RSU Adam Malik Medan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../index.css">
+    <script src="cari.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+    <nav class="nav-con">
+        <div>
+          <img src="../assets/logo.png" alt="Logo RS Adam Malik" />
+        </div>
+        <ul>
+          <li><a href="/index.html" class="quicksand" >Beranda</a></li>
+          <li><a href="/jadwal/index.html" class="quicksand" style="font-weight: 700">Jadwal Dokter</a></li>
+          <li><a href="/contact/index.html" class="quicksand">Kontak</a></li>
+        </ul>
+        <div id="auth-buttons">
+          <a href="/auth/login.html"
+            ><button class="btn-outline poppins-bold">Login</button></a
+          >
+          <a href="/auth/signup.html"
+            ><button class="btn-primary poppins-bold">Register</button></a
+          >
+        </div>
+        <div id="logout-button" style="display: none">
+          <button class="btn-outline poppins-bold" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <header class="header-container">
+        <img src="../assets/Adam_malik.jpg" alt="RS Adam Malik" class="header-image">
+        <h1 class="header-title poppins-bold">Jadwal Dokter RSU Adam Malik Medan</h1>
+    </header>
+
+
+   <section class="search-section">
+        <div class="input-wrapper">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" id="search" class="search-input quicksand" placeholder="Masukkan nama dokter..." onkeyup="cariDokter()">
+        </div>
+        <select class="quicksand" id="sortSelect" onchange="sortTable()">
+            <option value="default">Default</option>
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
+        </select>
+    </section>
+
+
+    <section class="jadwal-section">
+        <h2 class="poppins-bold">Jadwal Dokter</h2>
+        <table id="jadwalTable">
+            <thead>
+                <tr>
+                    <th>Nama Dokter</th>
+                    <th>Spesialis</th>
+                    <th>Hari</th>
+                    <th>Jam Praktik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dr. Rita Evalina,Sp.A </td>
+                    <td>Anak Alergi Imunologi</td>
+                    <td>Senin - Kamis</t>
+                    <td>08:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>dr. Anri Iskandar Mardia,Sp.PD</td>
+                    <td>Hematologi - Onkologi Medik</td>
+                    <td>Selasa - Kamis</td>
+                    <td>09:00 - 13:00</td>
+                </tr>
+                <tr>
+                    <td>dr. Arya Tjipta Prananda,Sp.BD</td>
+                    <td>Bedah Plastik</td>
+                    <td>Rabu - Jumat</td>
+                    <td>10:00 - 14:00</td>
+                </tr>
+                <tr>
+                    <td>dr. Putri Amelia Sp.A</td>
+                    <td>Kardiologi</td>
+                    <td>Sabtu - Minggu</td>
+                    <td>08:00 - 12:30</td>
+                </tr>
+                <tr>
+                    <td>dr. Rosmayati Siyafriani Sriregar,Sp.N</td>
+                    <td>Nefrologi</td>
+                    <td>Jum'at - Sabtu</td>
+                    <td>08:00 - 10:05</td>
+                </tr>
+                <tr>
+                    <td>dr. Wisman</td>
+                    <td>Respirologi Anak</td>
+                    <td>Senin - Rabu</td>
+                    <td>09:00 - 14:15</td>
+                </tr>
+                <tr>
+                    <td>dr. Welly Efendy Seba,DRG </td>
+                    <td>Bedah Mulut</td>
+                    <td>Selasa - Kamis</td>
+                    <td>08:00 - 15:20</td>
+                </tr>
+                <tr>
+                    <td>dr. Budi Irwan</td>
+                    <td>Bedah Digestif</td>
+                    <td>Kamis - Sabtu</td>
+                    <td>10:00 - 11:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Abdurrahman Mouza</td>
+                    <td>Bedah Saraf</td>
+                    <td>Rabu - Jum'at</td>
+                    <td>08:00 - 12:45</td>
+                </tr>
+                <tr>
+                    <td>dr.Sriwahyni Pernama</td>
+                    <td>Bedah Kulit</td>
+                    <td>Kamis - Jum'at</td>
+                    <td>09:00 - 16:30</td>
+                </tr>
+                <tr>
+                    <td>dr.Rizalina A. Asnir,Sp.THT-KL (K) FICS</td>
+                    <td>Bedah Kepala Leher</td>
+                    <td>Senin - Rabu</td>
+                    <td>13:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Alfi Syahri Rangkuti (SDCTK)</td>
+                    <td>Jiwa</td>
+                    <td>Selasa - Rabu</td>
+                    <td>13:00 - 17:10</td>
+                </tr>
+                <tr>
+                    <td>dr.Wika Hanid,Sp.PD</td>
+                    <td>Psikosomatik</td>
+                    <td>Kamis - Jum'at</td>
+                    <td>14:00 - 16:50</td>
+                </tr>
+                <tr>
+                    <td>dr.Fadli Armi Lubis,Sp.AN</td>
+                    <td>Anastesi</td>
+                    <td>Selasa - Kamis</td>
+                    <td>13:00 - 16:20</td>
+                </tr>
+                <tr>
+                    <td>dr.Melda Deliana</td>
+                    <td>Endokrinologi</td>
+                    <td>Rabu - Kamis</td>
+                    <td>10:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Elly Tianggur E Silalahi,Sp.M</td>
+                    <td>Mata</td>
+                    <td>Selasa - Rabu</td>
+                    <td>08:00 - 10:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Alwi Thamrin Nasution,Sp.PD.KGH</td>
+                    <td>Ginjal-Hipertensi</td>
+                    <td>Kamis - Sabtu</td>
+                    <td>14:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Erjan Fikri,Sp.BA</td>
+                    <td>Bedah Anak</td>
+                    <td>Senin - Rabu</td>
+                    <td>12:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>dr.Muntasir AB,Sp.P</td>
+                    <td>Paru-Paru</td>
+                    <td>Selasa - Jum'at</td>
+                    <td>13:00 - 17:10</td>
+                </tr>
+                <tr>
+                    <td>dr.Kristina Nadeak,Sp.KK</td>
+                    <td>Infeksi Menular Seksual</td>
+                    <td>Senin -  Kamis</td>
+                    <td>09:00 - 11:00</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+</html>

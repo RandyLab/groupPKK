@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .contact-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .contact-header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #004d40;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+  }
+  
+  .contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    max-width: 500px;
+    line-height: 1.6;
+  }
+  
+  .contact-decor {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    opacity: 0.5;
+  }
+  
+  .contact-image {
+    flex: 1;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+  }
+  
+  .card:last-child {
+    border-right: none;
+  }
+  
+  .card i {
+    font-size: 32px;
+    color: #004d40;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+  
+  .card a {
+    font-size: 13px;
+    color: #00796b;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .card button {
+    background-color: #f15a29;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #e64a19;
+  }
+
+  .card ul li a {
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  .card ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  

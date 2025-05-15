@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-bottom: 30px;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    display: block;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+/* search sect */
+.search-section {
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 8px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+#sortSelect {
+    box-shadow: 2px 2px 2px gray;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.jadwal-section {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+}
+.jadwal-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.jadwal-section th,
+.jadwal-section td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.jadwal-section th {
+    background-color: #f2f2f2;
+}
+.jadwal-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.jadwal-section tr:hover {
+    background-color: #eaeaea;
+}
+.jadwal-section {
+    min-height: 400px; 
+}
+
+
